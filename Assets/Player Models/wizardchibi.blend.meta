@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: e5f840f08c6e4eb498cd2bfed21e27c6
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: bottom
+    100002: bottom2
+    100004: coat
+    100006: Cube
+    100008: eye1
+    100010: eye2
+    100012: hair
+    100014: linings
+    100016: outer_coat
+    100018: Plane
+    100020: scarf
+    100022: shoe
+    100024: top
+    100026: top2
+    100028: //RootNode
+    400000: bottom
+    400002: bottom2
+    400004: coat
+    400006: Cube
+    400008: eye1
+    400010: eye2
+    400012: hair
+    400014: linings
+    400016: outer_coat
+    400018: Plane
+    400020: scarf
+    400022: shoe
+    400024: top
+    400026: top2
+    400028: //RootNode
+    2100000: Material_010
+    2100002: Material_011
+    2100004: Material_002
+    2100006: Material_004__shoe_texture_jpg
+    2100008: Material_007
+    2100010: Material_008
+    2100012: Material_003__pants_texture_jpg
+    2100014: Material_003
+    2100016: Material_006
+    2100018: Material
+    2100020: Material_001__cloak_texture_jpg
+    2100022: unnamed
+    2100024: Material_005__insignia_jpg
+    2100026: Material_009__skin_color_jpg
+    2300000: bottom
+    2300002: bottom2
+    2300004: coat
+    2300006: Cube
+    2300008: eye1
+    2300010: eye2
+    2300012: hair
+    2300014: linings
+    2300016: outer_coat
+    2300018: Plane
+    2300020: scarf
+    2300022: shoe
+    2300024: top
+    2300026: top2
+    3300000: bottom
+    3300002: bottom2
+    3300004: coat
+    3300006: Cube
+    3300008: eye1
+    3300010: eye2
+    3300012: hair
+    3300014: linings
+    3300016: outer_coat
+    3300018: Plane
+    3300020: scarf
+    3300022: shoe
+    3300024: top
+    3300026: top2
+    4300000: eye1
+    4300002: eye2
+    4300004: Plane
+    4300006: linings
+    4300008: shoe
+    4300010: bottom2
+    4300012: top2
+    4300014: bottom
+    4300016: top
+    4300018: hair
+    4300020: outer_coat
+    4300022: coat
+    4300024: scarf
+    4300026: Cube
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
