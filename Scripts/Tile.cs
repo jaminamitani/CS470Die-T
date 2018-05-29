@@ -11,6 +11,9 @@ public class Tile : MonoBehaviour {
     float playerCount;
     float offset;
     public GameObject control;
+    int gold;
+    int buff;
+    int buffVal;
     void Start()
     {
         m = GetComponent<MeshRenderer>();

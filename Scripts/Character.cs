@@ -13,6 +13,9 @@ public class Character : MonoBehaviour {
     public GameObject control;
     public GameObject rule;
     bool active;
+    int health;
+    int attack;
+    int def;
     void Start()
     {
         moves = 2;
@@ -89,5 +92,31 @@ public class Character : MonoBehaviour {
     public void decMoves()
     {
         moves--;
+    }
+
+    public int getAttack()
+    {
+        return attack;
+    }
+    public int getHealth()
+    {
+        return health;
+    }
+    public int getDefense()
+    {
+        return def;
+    }
+
+    public void setAttack(int n)
+    {
+        attack = n;
+    }
+    public void setHealth(int n)
+    {
+        health = n;
+    }
+    public void setDefense(int n)
+    {
+        def = n;
     }
 }

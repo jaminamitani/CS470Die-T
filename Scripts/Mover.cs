@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour {
     float z2;
     float offset;
     Vector3 dest;
-
+    Character ch;
     
      /*
       * Select is true when a piece is currently in motion and false otherwise
@@ -61,8 +61,7 @@ public class Mover : MonoBehaviour {
                 activeSpace = g;
               
                 select = true;
-                Character ch = activePlayer.GetComponent<Character>();
-                ch.decMoves();
+                
 
             }
             else
@@ -81,13 +80,14 @@ public class Mover : MonoBehaviour {
         //actual movement process
         if (activePlayer != null && activeSpace != null)
         {
-            Character ch = activePlayer.GetComponent<Character>();
+            ch = activePlayer.GetComponent<Character>();
+            
             x1 = activePlayer.transform.position.x;
             x2 = activeSpace.transform.position.x;
             z1 = activePlayer.transform.position.z;
             z2 = activeSpace.transform.position.z;
             //Checks to ensure that character being moved can only move to adjacent spaces (No diagonals)
-            if (Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) <= 10)
+            if (Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) <= 10 && Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) != 0)
             {
                 //while Select is true, player will move toward destination (center of activeSpace tile)
                 if (select)
@@ -99,7 +99,7 @@ public class Mover : MonoBehaviour {
                 if (activePlayer.transform.position == dest)
                 {
                     select = false;
-                    
+                    ch.decMoves();
                     activeSpace = null;
                     //if this action was the character's last move, the active player will be cleared to avoid further movement
                     if(ch.getMoves() <= 0)
