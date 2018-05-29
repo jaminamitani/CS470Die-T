@@ -24,32 +24,49 @@ public class Character : MonoBehaviour {
         master = Camera.main.GetComponent<Mover>();
 
     }
+
+    //Number of possible actions for this character
     public void ResetMoves()
     {
         moves = 2;
     }
+
+    //Mouseover options
     void OnMouseOver()
     {
+        //Highlights character when moves moves over it
         m.material.color = selected;
 
+        //When character is selected
         if (Input.GetMouseButtonDown(0))
         {
-            
+            //If it's not this player's turn, character will not be active
+            if (!GetActive())
+            {
+                Debug.Log("Player is not active");
+            }
+            else
+            {
+                //Sets this character to be moved using the mover script
                 master.SetActivePlayer(gameObject);
-            
+            }
         }
 
     }
 
+    //True when it is this character's turn to act, false otherwise
     public void ActiveStatus(bool a)
     {
         active = a;
     }
 
+    //Return active
     public bool GetActive()
     {
         return active;
     }
+
+    //Returns to previous color when not under mouse cursor
     void OnMouseExit()
     {
 
@@ -61,16 +78,14 @@ public class Character : MonoBehaviour {
 
     }
 
-    public void SetNum(int n)
-    {
-        playerNum = n;
-    }
-
+    
+    //get remaining number of actions this character has
     public int getMoves()
     {
         return moves;
     }
 
+    //Use to decrease remaining moves after each action
     public void decMoves()
     {
         moves--;
