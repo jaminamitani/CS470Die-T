@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour {
+
     MeshRenderer m;
     Color selected;
     Color old;
@@ -21,7 +22,7 @@ public class Character : MonoBehaviour {
         old = m.material.color;
         active = false;
         master = Camera.main.GetComponent<Mover>();
-       
+
     }
     public void ResetMoves()
     {
@@ -33,15 +34,9 @@ public class Character : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(playerNum);
-            if (GetActive())
-            {
+            
                 master.SetActivePlayer(gameObject);
-            }
-            else
-            {
-                Debug.Log("You can't interact with this character right now");
-            }
+            
         }
 
     }
@@ -63,7 +58,7 @@ public class Character : MonoBehaviour {
 
     private void Update()
     {
-      
+
     }
 
     public void SetNum(int n)
@@ -80,5 +75,4 @@ public class Character : MonoBehaviour {
     {
         moves--;
     }
-
 }

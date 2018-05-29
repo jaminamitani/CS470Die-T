@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour
-{
+public class Mover : MonoBehaviour {
+
     GameObject character;
     GameObject space;
     RaycastHit hit;
     GameObject activePlayer;
     GameObject activeSpace;
     Character c;
-    Tiles t;
+    Tile t;
     float s = 50;
     bool select;
     float x1;
@@ -19,28 +19,24 @@ public class Mover : MonoBehaviour
     float z2;
     float offset;
     Vector3 dest;
-   
+
     // Use this for initialization
     void Start()
     {
         select = false;
-        
+
     }
 
-    
+
 
     public void SetActivePlayer(GameObject g)
     {
-        
+
         if (!select)
         {
             activePlayer = g;
             c = activePlayer.GetComponent<Character>();
-            if(!c.GetActive())
-            {
-                Debug.Log("This character can't move");
-                activePlayer = null;
-            }
+            
         }
     }
 
@@ -51,14 +47,10 @@ public class Mover : MonoBehaviour
             if (activePlayer != null)
             {
                 activeSpace = g;
-                t = activeSpace.GetComponent<Tiles>();
+              
                 select = true;
-                Character ch = activePlayer.GetComponent<Character>();
-                if (ch.getMoves() != 0)
-                {
-                    ch.decMoves();
-                }
-                
+               
+
             }
             else
             {
@@ -70,10 +62,10 @@ public class Mover : MonoBehaviour
     void Update()
     {
 
-       
-        
 
-        
+
+
+
         if (activePlayer != null && activeSpace != null)
         {
 
@@ -81,7 +73,7 @@ public class Mover : MonoBehaviour
             x2 = activeSpace.transform.position.x;
             z1 = activePlayer.transform.position.z;
             z2 = activeSpace.transform.position.z;
-            if (Mathf.Abs(x1 - x2) <= 10 && Mathf.Abs(z1 - z2) <= 10)
+            if (Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) <= 10)
             {
                 if (select)
                 {
@@ -91,9 +83,9 @@ public class Mover : MonoBehaviour
                 if (activePlayer.transform.position == dest)
                 {
                     select = false;
-                    activePlayer = null;
-                    activeSpace = null;
                     
+                    activeSpace = null;
+
 
                 }
             }

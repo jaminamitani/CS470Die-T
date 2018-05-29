@@ -45,10 +45,7 @@ public class DungeonRunner : MonoBehaviour {
             Player pl = playerRoster[j].GetComponent<Player>();
             for (int i = 0; i < characters.Length; i++)
             {
-                
-               
-                
-                pl.setCharacter((GameObject)Instantiate(character, new Vector3(20 * j, 0.5f, 10 * i), Quaternion.identity) , i);
+                 pl.setCharacter((GameObject)Instantiate(character, new Vector3(20 * j, 0.5f, 10 * i), Quaternion.identity) , i);
             }
             
         }
