@@ -148,7 +148,7 @@ public class Character : MonoBehaviour {
             transform.position = previousPosition;
 
             DontDestroyOnLoad(this.gameObject);
-            SceneManager.LoadScene("battleScene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("battleScene");
         }
     }
 }

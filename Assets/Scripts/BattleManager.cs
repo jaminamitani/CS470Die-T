@@ -20,10 +20,8 @@ public class BattleManager : MonoBehaviour {
         Attack(fightingPlayers[0].GetComponent<Character>().getPlayerNum(), fightingPlayers[1].GetComponent<Character>().getPlayerNum());
         Attack(fightingPlayers[1].GetComponent<Character>().getPlayerNum(), fightingPlayers[0].GetComponent<Character>().getPlayerNum());
 
-        for (int i = 0; i < fightingPlayers.Length; i++)
-        {
-            Destroy(fightingPlayers[i]);
-        }
+        Destroy(fightingPlayers[0]);
+        Destroy(fightingPlayers[1]);
 
         SceneManager.LoadScene("boardScene");
     }
