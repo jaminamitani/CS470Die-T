@@ -25,7 +25,6 @@ public class GM : MonoBehaviour {
         PlanMap();
         MakeMap();
         SpawnCharacters();
-		
 	}
 
     //This marks the string layout with X's that the MakeMap() function will use later to spawn the map into place
@@ -102,7 +101,7 @@ public class GM : MonoBehaviour {
                 if (map[i, j] != null && map[i, j].Equals("X"))
                 {
                     tileMap[i, j] = (GameObject)Instantiate(tile, new Vector3(x, 0, z), Quaternion.identity);
-                    
+                    //DontDestroyOnLoad(tileMap[i, j]);
                 }
 
 
@@ -123,6 +122,11 @@ public class GM : MonoBehaviour {
             characterRoster[1] = (GameObject)Instantiate(character2, new Vector3(60, 0.5f, 0), Quaternion.identity);
             characterRoster[2] = (GameObject)Instantiate(character3, new Vector3(90, 0.5f, 60), Quaternion.identity);
             characterRoster[3] = (GameObject)Instantiate(character4, new Vector3(30, 0.5f, 80), Quaternion.identity);
+
+            //DontDestroyOnLoad(characterRoster[0]);
+            //DontDestroyOnLoad(characterRoster[1]);
+            //DontDestroyOnLoad(characterRoster[2]);
+            //DontDestroyOnLoad(characterRoster[3]);
 
         for(int i = 0; i < characterCount; i++)
         {
@@ -168,4 +172,23 @@ public class GM : MonoBehaviour {
                 ch.ResetMoves();
         }
     }
+
+    /*
+
+    private static GM playerInstance;
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+
+        if (playerInstance == null)
+        {
+            playerInstance = this;
+        }
+        else
+        {
+            DestroyObject(gameObject);
+        }
+    }
+
+*/
 }
