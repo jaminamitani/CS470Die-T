@@ -19,8 +19,12 @@ public class Mover : MonoBehaviour {
     float z2;
     float offset;
     Vector3 dest;
-
-    // Use this for initialization
+    Character ch;
+    
+     /*
+      * Select is true when a piece is currently in motion and false otherwise
+      * Use of Mover's functions is unavailable while Select is true to avoid interrupting movement
+      */
     void Start()
     {
         select = false;
@@ -28,18 +32,26 @@ public class Mover : MonoBehaviour {
     }
 
 
-
+    /*
+     * Sets the player selected to be moved
+     */
     public void SetActivePlayer(GameObject g)
     {
 
         if (!select)
         {
+           
             activePlayer = g;
             c = activePlayer.GetComponent<Character>();
+            
             
         }
     }
 
+    /*
+     * Sets the space for the selected player to move to
+     * Player must be selected first for this to be filled
+     */
     public void SetActiveSpace(GameObject g)
     {
         if (!select)
@@ -49,7 +61,7 @@ public class Mover : MonoBehaviour {
                 activeSpace = g;
               
                 select = true;
-               
+                
 
             }
             else
@@ -65,27 +77,35 @@ public class Mover : MonoBehaviour {
 
 
 
-
+        //actual movement process
         if (activePlayer != null && activeSpace != null)
         {
-
+            ch = activePlayer.GetComponent<Character>();
+            
             x1 = activePlayer.transform.position.x;
             x2 = activeSpace.transform.position.x;
             z1 = activePlayer.transform.position.z;
             z2 = activeSpace.transform.position.z;
-            if (Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) <= 10)
+            //Checks to ensure that character being moved can only move to adjacent spaces (No diagonals)
+            if (Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) <= 10 && Mathf.Abs(x1 - x2) + Mathf.Abs(z1 - z2) != 0)
             {
+                //while Select is true, player will move toward destination (center of activeSpace tile)
                 if (select)
                 {
                     dest = new Vector3(activeSpace.transform.position.x, activePlayer.transform.position.y, activeSpace.transform.position.z);
                     activePlayer.transform.position = Vector3.MoveTowards(activePlayer.transform.position, dest, s * Time.deltaTime);
                 }
+                //Once the player has reached the destination, Mover functions become cleared and ready for use again
                 if (activePlayer.transform.position == dest)
                 {
                     select = false;
-                    
+                    ch.decMoves();
                     activeSpace = null;
-
+                    //if this action was the character's last move, the active player will be cleared to avoid further movement
+                    if(ch.getMoves() <= 0)
+                    {
+                        activePlayer = null;
+                    }
 
                 }
             }
