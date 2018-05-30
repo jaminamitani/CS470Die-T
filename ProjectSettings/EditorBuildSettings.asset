@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/scene1.unity
+    path: Assets/Jason_files/Scenes/scene1.unity
     guid: 137d8e1201119443195cf4b2eb2a4044
   - enabled: 1
     path: Assets/Jason_files/Scenes/boardScene.unity
     guid: 9adc2b656127c6645acc28fd28f0db22
+  - enabled: 1
+    path: Assets/Jason_files/Scenes/battleScene.unity
+    guid: 422b66e7ccce40947a85ff5096ad070d
   m_configObjects: {}
