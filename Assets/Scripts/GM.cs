@@ -115,7 +115,7 @@ public class GM : MonoBehaviour {
     //Spawns characters into spaces on the map and places them in the array of current players
     void SpawnCharacters()
     {
-        characterCount = 3;
+        characterCount = 4;
         characterRoster = new GameObject[5];
 
         
@@ -124,6 +124,10 @@ public class GM : MonoBehaviour {
             characterRoster[2] = (GameObject)Instantiate(character3, new Vector3(90, 0.5f, 60), Quaternion.identity);
             characterRoster[3] = (GameObject)Instantiate(character4, new Vector3(30, 0.5f, 80), Quaternion.identity);
 
+        for(int i = 0; i < characterCount; i++)
+        {
+            characterRoster[i].GetComponent<Character>().setPlayerNum(i);
+        }
     }
 	
 	/*

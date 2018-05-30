@@ -130,6 +130,16 @@ public class Character : MonoBehaviour {
         previousPosition = previousPosition_;
     }
 
+    public void setPlayerNum(int playerNum_)
+    {
+        playerNum = playerNum_;
+    }
+
+    public int getPlayerNum()
+    {
+        return playerNum;
+    }
+
     public void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "Player")
@@ -137,6 +147,7 @@ public class Character : MonoBehaviour {
             Debug.Log("Player Collision");
             transform.position = previousPosition;
 
+            DontDestroyOnLoad(this.gameObject);
             SceneManager.LoadScene("battleScene");
         }
     }
