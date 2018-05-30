@@ -68,10 +68,10 @@
     <Compile Include="Assets\Jason_files\Scripts\Tiles.cs" />
     <Compile Include="Assets\scripts\LoadingSceneController.cs" />
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Garett/Downloads/CS470Die-T-jaminamitani-patch-1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Garett/workspace/CS470Die-T-jaminamitani-patch-1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Garett/Downloads/CS470Die-T-jaminamitani-patch-1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Garett/workspace/CS470Die-T-jaminamitani-patch-1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
