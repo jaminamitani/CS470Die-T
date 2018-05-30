@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    public static PlayerManager instance;
 
     private int[] playerHealth;
     private int[] playerAttack;
@@ -11,10 +12,22 @@ public class PlayerManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-
         playerHealth = new int[] { 20, 20, 20, 20 };
         playerAttack = new int[] { 5, 5, 5, 15 };
+    }
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
