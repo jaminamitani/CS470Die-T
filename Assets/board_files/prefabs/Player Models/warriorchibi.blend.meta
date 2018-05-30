@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: cd2932defa91de54b832ce8ec625f2e6
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: arm_armor
+    100002: Belt
+    100004: belt_metal
+    100006: bottom_sword
+    100008: Cube
+    100010: eye1
+    100012: eye2
+    100014: hair
+    100016: helmet
+    100018: lining_arm
+    100020: pants
+    100022: shoes
+    100024: shoulder_armor
+    100026: sword_handle
+    100028: sword_handle_001
+    100030: sword_sheath_thing
+    100032: top_armor
+    100034: //RootNode
+    400000: arm_armor
+    400002: Belt
+    400004: belt_metal
+    400006: bottom_sword
+    400008: Cube
+    400010: eye1
+    400012: eye2
+    400014: hair
+    400016: helmet
+    400018: lining_arm
+    400020: pants
+    400022: shoes
+    400024: shoulder_armor
+    400026: sword_handle
+    400028: sword_handle_001
+    400030: sword_sheath_thing
+    400032: top_armor
+    400034: //RootNode
+    2100000: Material_015
+    2100002: Material_013
+    2100004: Material_014
+    2100006: Material_012
+    2100008: Material_011
+    2100010: Material_009
+    2100012: Material
+    2100014: Material_002
+    2100016: Material_005
+    2100018: Material_006
+    2100020: Material_007
+    2100022: Material_003
+    2100024: Material_004
+    2100026: Material_001
+    2100028: Material_008
+    2100030: Material_010
+    2300000: arm_armor
+    2300002: Belt
+    2300004: belt_metal
+    2300006: bottom_sword
+    2300008: Cube
+    2300010: eye1
+    2300012: eye2
+    2300014: hair
+    2300016: helmet
+    2300018: lining_arm
+    2300020: pants
+    2300022: shoes
+    2300024: shoulder_armor
+    2300026: sword_handle
+    2300028: sword_handle_001
+    2300030: sword_sheath_thing
+    2300032: top_armor
+    3300000: arm_armor
+    3300002: Belt
+    3300004: belt_metal
+    3300006: bottom_sword
+    3300008: Cube
+    3300010: eye1
+    3300012: eye2
+    3300014: hair
+    3300016: helmet
+    3300018: lining_arm
+    3300020: pants
+    3300022: shoes
+    3300024: shoulder_armor
+    3300026: sword_handle
+    3300028: sword_handle_001
+    3300030: sword_sheath_thing
+    3300032: top_armor
+    4300000: sword_sheath_thing
+    4300002: belt_metal
+    4300004: Belt
+    4300006: eye2
+    4300008: eye1
+    4300010: sword_handle_001
+    4300012: hair
+    4300014: lining_arm
+    4300016: arm_armor
+    4300018: shoes
+    4300020: pants
+    4300022: shoulder_armor
+    4300024: top_armor
+    4300026: helmet
+    4300028: bottom_sword
+    4300030: sword_handle
+    4300032: Cube
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
